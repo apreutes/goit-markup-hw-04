@@ -168,6 +168,19 @@ line-height: 1.19;
     text-transform: uppercase;
 }
 
+
+/* .overlay {
+max-width: 1600px;
+min-height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-image: rgba(47, 48, 58, 0.4), url(../);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+} */
+
+
 /* Button */
 .primary-button {
     border-radius: 4px;
