@@ -6,6 +6,7 @@
   --secondary-text-color: rgba(255, 255, 255, 0.6);
   --back-color: #2f303a;
   --secondary-back-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   font-size: 14px;
 }
 
-/* КОНТЕЙНЕРЫ И ОБЩИЙ СБРОС ГЕОМЕТРИИ*/
+/* КОНТЕЙНЕРИ ТА ЗАГАЛЬНЕ СКИДАННЯ ГЕОМЕТРІЇ*/
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -45,7 +46,7 @@ h3 {
   margin-bottom: 0;
 }
 
-/* Маркированные списки и линки */
+/* Маркировані списки та лінки */
 .list {
   list-style-type: none;
   padding: 0;
@@ -55,7 +56,7 @@ h3 {
   text-decoration: none;
 }
 
-/* Header */
+/* ==============Header============== */
 .header-menu {
   display: flex;
   align-items: center;
@@ -113,7 +114,7 @@ h3 {
   color: var(--accent-color);
 }
 
-/* Contacts*/
+/* Contacts */
 
 .contacts {
   display: flex;
@@ -147,7 +148,7 @@ h3 {
   fill: currentColor;
 }
 
-/* СТИЛИ ДЛЯ СТУДИИ */
+/* СТИЛІ ДЛЯ СТУДІЇ */
 
 .section-title {
   margin-bottom: 50px;
@@ -156,7 +157,7 @@ h3 {
   text-align: center;
 }
 
-/* Hero */
+/* ==============Hero============== */
 .hero {
   text-align: center;
   padding: 200px 0;
@@ -186,10 +187,6 @@ h3 {
   text-transform: uppercase;
 }
 
-/* .overlay {
-
-} */
-
 /* Button */
 .primary-button {
   border-radius: 4px;
@@ -212,7 +209,7 @@ h3 {
   background-color: #188ce8;
 }
 
-/* Features */
+/* ==============Features============== */
 
 .features-title {
   position: absolute;
@@ -267,7 +264,7 @@ h3 {
   height: 70px;
 }
 
-/* Work */
+/* ==============Work============== */
 
 .work {
   padding-top: 0;
@@ -281,7 +278,7 @@ h3 {
   margin-right: 30px;
 }
 
-/* Team */
+/* ==============Team============== */
 
 .team {
   background-color: var(--secondary-back-color);
@@ -289,6 +286,13 @@ h3 {
 
 .team-list {
   display: flex;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
 }
 
 .team-item:not(:last-child) {
@@ -314,10 +318,75 @@ h3 {
 .team-text {
   color: var(--text-color);
   font-size: 16px;
+  margin-bottom: 16px;
   line-height: 1.18;
 }
 
-/* СТИЛИ ДЛЯ ПОРТФОЛИО*/
+/* Список соціальних мереж у Команді */
+
+.team-social-network-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: var(--icon-color);
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/*==============Clients============== */
+.clients-list {
+  display: flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  color: var(--icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+/* СТИЛІ ДЛЯ ПОРТФОЛІО*/
 
 /* Filter */
 
