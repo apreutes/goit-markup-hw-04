@@ -124,15 +124,11 @@ h3 {
   margin-left: 30px;
 }
 
-.contacts-item {
+.contacts-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contacts a {
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--text-color);
   font-weight: 500;
@@ -140,13 +136,15 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
 .contacts-icon {
   margin-right: 10px;
+  order: -1;
+  fill: currentColor;
 }
 
 /* СТИЛИ ДЛЯ СТУДИИ */
