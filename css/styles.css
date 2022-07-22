@@ -517,3 +517,51 @@ h3 {
 .mail-link:focus {
   color: var(--accent-color);
 }
+
+/* Соцмережі */
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+.footer-social-network-title {
+  display: block;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social-network-list {
+  display: flex;
+}
+
+.footer-social-network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-network-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
+
+.footer-network-link:hover,
+.footer-network-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-network-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
