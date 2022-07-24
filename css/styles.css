@@ -440,7 +440,11 @@ h3 {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.projects-item:hover {
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -472,6 +476,7 @@ h3 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 .projects-text {
   color: var(--text-color);
